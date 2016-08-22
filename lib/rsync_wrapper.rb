@@ -1,5 +1,2 @@
-require "rsync_wrapper/version"
-
-module RsyncWrapper
-  # Your code goes here...
-end
+require 'rsync_wrapper/version'
+require 'rsync_wrapper/rsync'

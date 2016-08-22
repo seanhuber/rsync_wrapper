@@ -1,0 +1,6 @@
+2016/08/14 20:30:40 [6291] receiving file list
+2016/08/14 20:30:40 [6291] >f.sT.... my_source_dir/file_one.pdf
+2016/08/14 20:30:40 [6291] >f+++++++ my_source_dir/second_file.doc
+2016/08/14 20:30:40 [6291] sent 68 bytes  received 17116 bytes  total size 60481700
+2016/08/14 20:51:38 [6927] receiving file list
+2016/08/14 20:51:38 [6927] sent 24 bytes  received 35 bytes  total size 0
