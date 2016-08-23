@@ -5,7 +5,7 @@ class Rsync
       raise ArgumentError, "#{k} is required" unless opts[k]
       @dirs[k] = opts[k]
     end
-    @inclusions = opts[:include_extenstions].map{|ext| "*.#{ext}"} || []
+    @inclusions = opts[:include_extensions].map{|ext| "*.#{ext}"} || []
     @exclusions = opts[:exclusions] || []
     if opts[:subdirs_only]
       @inclusions << '*/' # include subdirectories

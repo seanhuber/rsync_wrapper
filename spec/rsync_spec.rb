@@ -5,7 +5,7 @@ describe Rsync do
     rsync = Rsync.new(
       src_dir: File.join(FileUtils.pwd, 'spec', 'test_src_dir'),
       dest_dir: File.join(FileUtils.pwd, 'spec', 'test_dest_dir'),
-      include_extenstions: [:doc, :docx, :pdf],
+      include_extensions: [:doc, :docx, :pdf],
       subdirs_only: true,
       logfile: File.join(FileUtils.pwd, 'spec', 'dummy_rsync_output.log')
     )
@@ -18,7 +18,7 @@ describe Rsync do
     rsync = Rsync.new(
       src_dir: File.join(FileUtils.pwd, 'spec', 'test_src_dir'),
       dest_dir: File.join(FileUtils.pwd, 'spec', 'test_dest_dir'),
-      include_extenstions: [:doc, :docx, :pdf],
+      include_extensions: [:doc, :docx, :pdf],
       subdirs_only: true,
       logfile: File.join(FileUtils.pwd, 'spec', 'dummy_rsync_output.log')
     )
@@ -47,7 +47,7 @@ describe Rsync do
     rsync = Rsync.new(
       src_dir: src_dir,
       dest_dir: dest_dir,
-      include_extenstions: [:txt],
+      include_extensions: [:txt],
       subdirs_only: true,
       logfile: logfile
     )
