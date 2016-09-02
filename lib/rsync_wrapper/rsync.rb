@@ -51,6 +51,6 @@ class Rsync
       end
     end
 
-    # File.delete @logfile
+    File.delete @logfile
   end
 end
