@@ -5,13 +5,19 @@ class Rsync
       raise ArgumentError, "#{k} is required" unless opts[k]
       @dirs[k] = opts[k]
     end
-    @inclusions = opts[:include_extensions].map{|ext| "*.#{ext}"} || []
+    @inclusions = opts[:include_extensions] ? opts[:include_extensions].map{|ext| "*.#{ext}"} : []
     @exclusions = opts[:exclusions] || []
     if opts[:subdirs_only]
       @inclusions << '*/' # include subdirectories
       @exclusions << '*'
     end
-    @logfile = opts[:log_dir] ? File.join(opts[:log_dir], "rsync-#{SecureRandom.uuid}.log") : opts[:logfile]
+    @logfile = if opts[:log_dir]
+      File.join(opts[:log_dir], "rsync-#{SecureRandom.uuid}.log")
+    elsif opts[:logfile]
+      opts[:logfile]
+    else
+      File.join(Dir.pwd, "rsync-#{SecureRandom.uuid}.log")
+    end
   end
 
   def sync! &block

@@ -22,7 +22,7 @@ describe Rsync do
       subdirs_only: true,
       logfile: File.join(FileUtils.pwd, 'spec', 'dummy_rsync_output.log')
     )
-    allow(rsync).to receive(:`)
+    # allow(rsync).to receive(:`)
     expected_results = [
       ["my_source_dir/file_one.pdf", false],
       ["my_source_dir/second_file.doc", true]

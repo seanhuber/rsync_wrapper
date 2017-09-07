@@ -9,3 +9,5 @@
 /tmp/
 
 spec/actual_sync.log
+
+*.log
