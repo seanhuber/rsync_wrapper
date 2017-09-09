@@ -9,7 +9,7 @@ describe Rsync do
       subdirs_only: true,
       logfile: File.join(FileUtils.pwd, 'spec', 'dummy_rsync_output.log')
     )
-    expect(rsync).to receive(:`).with("rsync -ri --log-file '/Users/seanhuber/Rails Apps/rsync_wrapper/spec/dummy_rsync_output.log' --size-only --prune-empty-dirs --include '*.doc' --include '*.docx' --include '*.pdf' --include '*/' --exclude '*' \"/Users/seanhuber/Rails Apps/rsync_wrapper/spec/test_src_dir\" \"/Users/seanhuber/Rails Apps/rsync_wrapper/spec/test_dest_dir\" > /dev/null 2>&1")
+    expect(rsync).to receive(:`).with("rsync -ri --log-file '#{FileUtils.pwd}/spec/dummy_rsync_output.log' --size-only --prune-empty-dirs --include '*.doc' --include '*.docx' --include '*.pdf' --include '*/' --exclude '*' \"#{FileUtils.pwd}/spec/test_src_dir\" \"#{FileUtils.pwd}/spec/test_dest_dir\" > /dev/null 2>&1")
     expect(rsync).to receive(:parse_logfile).and_return(nil)
     rsync.sync!
   end
