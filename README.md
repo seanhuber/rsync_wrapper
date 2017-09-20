@@ -1,3 +1,6 @@
+[![Gem Version](https://badge.fury.io/rb/rsync_wrapper.svg)](https://badge.fury.io/rb/rsync_wrapper)
+[![Build Status](https://travis-ci.org/seanhuber/rsync_wrapper.svg?branch=master)](https://travis-ci.org/seanhuber/rsync_wrapper)
+
 rsync_wrapper
 ==============
 
