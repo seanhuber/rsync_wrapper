@@ -1,5 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/rsync_wrapper.svg)](https://badge.fury.io/rb/rsync_wrapper)
 [![Build Status](https://travis-ci.org/seanhuber/rsync_wrapper.svg?branch=master)](https://travis-ci.org/seanhuber/rsync_wrapper)
+[![Coverage Status](https://coveralls.io/repos/github/seanhuber/rsync_wrapper/badge.svg?branch=master)](https://coveralls.io/github/seanhuber/rsync_wrapper?branch=master)
 
 rsync_wrapper
 ==============
